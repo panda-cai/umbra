@@ -21,7 +21,6 @@ router.post("/register",(req,res)=>{
 });
 //2.用户登录
 router.post("/login",(req,res)=>{
-  console.log("链接成功");
   var obj=req.body;
   var $email=obj.email;
   var $upwd=obj.upwd;
@@ -42,7 +41,13 @@ router.get("/detail",(req,res)=>{
   var $email=req.query.email;
   if(!$email){res.send("email is require");return;}
   pool.query("SELECT * FROM umbra_user WHERE email=?",[$email],(err,result)=>{
-    result.length>0?res.send(result):res.send("search false");
+    result.length>0?res.send(result):res.send("401");
+  });
+});
+//4.用户列表
+router.get("/list",(req,res)=>{
+  pool.query("SELECT * FROM umbra_user",(err,result)=>{
+    result.length>0?res.send(result):res.send("401");
   });
 });
 

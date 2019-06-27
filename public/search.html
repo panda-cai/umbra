@@ -8,13 +8,20 @@
 	<h1>用户检索</h1>
 		<input type="text" id="email">
 		<input type="submit" value="查找" onclick="search()">
-		<table>
+		<table border="1" cellpadding="5">
 			<thead>
 				<tr>
-					<td></td>
+					<td>用户编号</td>
+					<td>用户邮箱</td>
+					<td>国家</td>
+					<td>姓名</td>
+					<td>地址</td>
+					<td>电话</td>
 				</tr>
-			</thead>	
+			</thead>
+			<tbody id="searchdata"></tbody>
 		</table>
+		<h2 id="h2"></h2>
 </body>
 <script>
 	function search(){
@@ -22,8 +29,21 @@
 		xhr.onreadystatechange=function(){
 			if(xhr.readyState==4 && xhr.status==200){
 				var result=xhr.responseText;
-				var arr=JSON.parse(result);
-				
+				if(result==401){
+					searchdata.innerHTML="没有这个用户";
+				}else{
+					var arr=JSON.parse(result);
+					searchdata.innerHTML=`
+					<tr>
+					<td>${arr[0].uid}</td>
+					<td>${arr[0].email}</td>
+					<td>${arr[0].nation}</td>
+					<td>${arr[0].user_name}</td>
+					<td>${arr[0].address}</td>
+					<td>${arr[0].phone}</td>
+					</tr>
+				`;
+				}
 			}	
 		}
 		var url=`/user/detail?email=${email.value}`;

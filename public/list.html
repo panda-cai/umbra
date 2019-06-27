@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>list</title>
+</head>
+<body onload="list()">
+	<h1 align="center">列表</h1>
+		<table border="1" cellpadding="10" align="center">
+			<thead>
+				<tr>
+					<td>用户编号</td>
+					<td>用户邮箱</td>
+					<td>国家</td>
+					<td>姓名</td>
+					<td>地址</td>
+					<td>电话</td>
+					<td>操作</td>
+				</tr>
+			</thead>
+			<tbody id="listdata"></tbody>
+		</table>
+</body>
+<script>
+	function list(){
+		console.log(1);
+		var xhr=new XMLHttpRequest();
+		xhr.onreadystatechange=function(){
+			if(xhr.readyState==4 && xhr.status==200){
+				var result=xhr.responseText;
+				if(result==401){
+					listdata.innerHTML="没有用户";
+				}else{
+					var arr=JSON.parse(result);
+					for(var i=0;i<arr.length;i++){
+						listdata.innerHTML+=`
+							<tr>
+							<td>${arr[i].uid}</td>
+							<td>${arr[i].email}</td>
+							<td>${arr[i].nation}</td>
+							<td>${arr[i].user_name}</td>
+							<td>${arr[i].address}</td>
+							<td>${arr[i].phone}</td>
+							<td><a href="#">删除</a>&nbsp;&nbsp;<a href="#">修改</a></td>
+							</tr>
+							`;
+					}
+				}
+			}	
+		}
+		var url="/user/list";
+		xhr.open("get",url,true);
+		xhr.send(null);
+	}
+</script>
+</html>
