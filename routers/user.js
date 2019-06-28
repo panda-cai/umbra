@@ -44,7 +44,7 @@ router.get("/detail",(req,res)=>{
     result.length>0?res.send(result):res.send("401");
   });
 });
-//4.用户列表
+//4.用户列表list
 router.get("/list",(req,res)=>{
   pool.query("SELECT * FROM umbra_user",(err,result)=>{
     result.length>0?res.send(result):res.send("401");

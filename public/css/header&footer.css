@@ -1,0 +1,72 @@
+.logo_size{
+  width:5rem;
+}
+/*设置背景颜色为纯黑色*/
+.bg_black{
+	background: #000;;
+}
+/* nav-link导航字体颜色 */
+.navbar-dark .navbar-nav .nav-link{
+  color:#fff;
+}
+/* a标签内字体 */
+.a_white{
+  color:#fff;
+}
+
+.a_black{
+  color:#000;
+}
+/* 折叠按钮图片 */
+.navbar-toggler{
+  border:0;
+}
+.navbar-toggler-icon{
+  border:0;
+}
+.navbar-dark .navbar-toggler-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+/* 底部主框 */
+.footer{
+  width:1170px;
+  margin:0 auto;
+}
+/* 底部列表字体 */
+.footer_font{
+  font-size:0.87rem;
+}
+.footer_a_white{
+  color: rgba(255,255,255,0.8);
+  font-size:0.87rem;
+}
+.footer_a_white:hover{
+  color:#fff;
+}
+.footer_border{
+  border-bottom:2px solid #303030;
+}
+/* 媒体查询 */
+@media screen and (max-width:1170px){
+  .footer{
+    width:100%;
+    margin:0 auto;
+  }
+}
+@media screen and (min-width:992px){
+  .logo_display{
+    display:none;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+  .logo_display_big{
+    display:none;
+  }
+}
+
+@media screen and (max-width:767px){
+  .logo_display_big{
+    display:none;
+  }
+}
