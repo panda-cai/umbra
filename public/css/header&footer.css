@@ -46,6 +46,10 @@
 .footer_border{
   border-bottom:2px solid #303030;
 }
+.nav_position{
+	position:fixed;
+	right:0;
+}
 /* 媒体查询 */
 @media screen and (max-width:1170px){
   .footer{
