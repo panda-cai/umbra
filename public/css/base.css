@@ -7,7 +7,6 @@ iframe{
 	margin:0;
 }
 .header{
-	height:6.5rem;
 	position:fixed;
 	z-index:1000;
 }
@@ -16,4 +15,72 @@ iframe{
 }
 .carousel-item img{
 	width: 100%;
+}
+.font_black{
+	color:#000;
+}
+.a_white{
+	color:#fff;
+}
+.a_black{
+	color:#000;
+}
+/*ÂÖ²¥Í¼×ÖÌå*/
+.carousel-caption{
+	left:10%;
+	bottom:28%;
+	width:38rem;
+}
+.carousel-caption h1{
+	font-size: 2.75rem;
+}
+.carousel-caption p{
+	font-size: 0.87rem;
+}
+.carousel-caption a{
+	display: block;
+	width:9rem;
+	height: 2.5rem;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	line-height: 2.5rem;
+	font-size: 0.87rem;
+	font-weight: bold;
+}
+.carousel-caption a:hover{
+	text-decoration: none;
+	background: #333;
+}
+/*ÂÖ²¥Í¼°´Å¥*/
+.carousel-control-prev,
+.carousel-control-next{
+	width:2rem;
+	background: #fff;
+	height: 6rem;
+	top:45%;
+	margin:0 0.5rem 0;
+}
+.carousel-control-prev-icon{
+	background-image:url("../images/left.svg");
+}
+.carousel-control-next-icon{
+	background-image:url("../images/right.svg");
+}
+/*Ã½Ìå²éÑ¯*/
+@media screen and (min-width:992px){
+
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+	.header{
+		height:auto;
+		background:#000000;
+	}
+}
+
+@media screen and (max-width:767px){
+	.header{
+		height:3.5rem;
+	}
 }
