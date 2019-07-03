@@ -6,6 +6,7 @@ iframe{
 	padding:0;
 	margin:0;
 }
+
 .header{
 	position:fixed;
 	z-index:1000;
@@ -67,6 +68,193 @@ iframe{
 .carousel-control-next-icon{
 	background-image:url("../images/right.svg");
 }
+/*首页标题h1*/
+.index_title{
+	text-align: center;
+	font-size: 1.9rem;
+	font-weight: normal;
+	color:#000;
+	margin-top:1.75rem;
+	margin-bottom: 0.87rem;
+}
+/*未来港人士*/
+.ul_style{
+	display:flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width:90%;
+	margin: 0 auto;
+}
+.featured{
+	position: relative;
+	width: 19%;
+	margin-bottom: 1rem;
+
+}
+.featured span{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	background: rgba(255,255,255,0.9);
+	padding:0.5rem 0 0.5rem;
+	color:#333;
+	z-index:10;
+	transition:all 0.3s;
+	font-size: 1.1rem;
+}
+.featured:hover span{
+	color:#666;
+	padding:0.8rem 0 0.8rem;
+}
+/*card商品标题*/
+.products{
+	position: relative;
+}
+.products-prev{
+	width: 3rem;
+	height: 3rem;
+	position: absolute;
+	left: 0;
+	top: 30%;
+	z-index: 99;
+}
+.products-next{
+	width: 3rem;
+	height: 3rem;
+	position: absolute;
+	right: 0;
+	top: 30%;
+	text-align: right;
+	z-index: 99;
+}
+.products-prev .carousel-control-prev-icon,.carousel-control-next-icon{
+	width: 2.5rem;
+	height: 2.5rem;
+}
+.product_title{
+	color:#000;
+	font-size: 0.9rem;
+	font-weight: bold;
+}
+.product_title:hover{
+	color:#666666;
+	text-decoration: none;
+}
+.money_sign,.price{
+	color: #000;
+	font-size: 0.9rem;
+}
+.product_img:hover img{
+	opacity: 0.7;
+}
+
+.quick{
+	position: absolute;
+	left:25%;
+	top:35%;
+	width: 50%;
+	padding: 0.3rem;
+	background: #000;
+	z-index: 20;
+	color: #fff;
+	font-size: 0.75rem;
+	text-align: center;
+	display: none;
+	font-weight: bold;
+}
+.quick:hover{
+	text-decoration: none;
+	color: #fff;
+}
+.product_img:hover .quick{
+	display: inline;
+}
+/*about*/
+.design{
+	text-align: center;
+	padding-top: 12.5rem;
+	padding-bottom:12.5rem;
+	background:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url(../images/banner-designwithus-4.jpg);
+	background-size: cover;
+}
+.design h1{
+	margin-bottom: 2rem;
+	font-size: 3.5rem;
+	color: #fff;
+	text-align: center;
+}
+.design a{
+	padding:0.8rem 2rem;
+	text-align: center;
+	background: #fff;
+	color: #000;
+	font-size: 0.87rem;
+}
+.design a:hover{
+	background: #000;
+	color: #fff;
+	text-decoration: none;
+}
+.store{
+	padding:6.25rem 3.75rem;
+	background:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url(../images/meet-umbra-footer.jpg);
+	background-size: cover;
+	width: 49.5%;
+}
+.store_width{
+	width: 15rem;
+}
+.store h1{
+	margin-bottom: 1.25rem;
+	font-size: 2.1rem;
+	color: #fff;
+}
+.store span{
+	display: block;
+	color: #fff;
+	font-size: 0.87rem;
+	margin-bottom: 1rem;
+}
+.store a{
+	padding:0.8rem 2rem;
+	text-align: center;
+	background: #fff;
+	color: #000;
+	font-size: 0.87rem;
+}
+.store a:hover{
+	background: #000;
+	color: #fff;
+	text-decoration: none;
+}
+.inspired{
+	background:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url(../images/stay-inspired.jpg);
+}
+/*导航填充物*/
+.fill{
+	width:100%;
+	height:6.5rem
+
+}
+/*list style*/
+.breadcrumb{
+	background: #fff;
+}
+.breadcrumb-item + .breadcrumb-item::before{
+	content:"-";
+}
+.breadcrumb-item a{
+	color:#757575;
+	font-size: 0.82rem;
+}
+.breadcrumb-item a:hover{
+	text-decoration: none;
+}
+.breadcrumb-item.active a{
+	color:#000;
+}
 /*媒体查询*/
 @media screen and (min-width:992px){
 
@@ -77,10 +265,53 @@ iframe{
 		height:auto;
 		background:#000000;
 	}
+	.ul_style{
+		width: 92%;
+	}
+	.featured{
+		width:48%;
+	}
+	.design{
+		padding-top:6.25rem;
+		padding-bottom:6.25rem;
+	}
+	.store{
+		width:100%;
+	}
+	.index_title{
+		margin-top: 5rem;
+	}
+	.fill{
+		width:100%;
+		height:3.5rem
+
+	}
 }
 
 @media screen and (max-width:767px){
 	.header{
-		height:3.5rem;
+		height:auto;
+		background:#000000;
+	}
+	.ul_style{
+		width: 92%;
+	}
+	.featured{
+		width:48%;
+	}
+	.design{
+		padding-top:6.25rem;
+		padding-bottom:6.25rem;
+	}
+	.store{
+		width:100%;
+	}
+	.index_title{
+		margin-top: 5rem;
+	}
+	.fill{
+		width:100%;
+		height:3.5rem
+
 	}
 }
