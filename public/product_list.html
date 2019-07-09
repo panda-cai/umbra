@@ -51,6 +51,343 @@
 			</ul>
 			<!--标题-->
 			<h1 class="index_title">Products</h1>
+			<!--筛选-->
+			<div class="row m-0 justify-content-between mb-4 my_md_none my_xs_none">
+				<div class="refine_by">
+					<h5>REFINE BY</h5>
+					No filters applied
+				</div>
+				<div class="sort_by">
+					<div class="sort_border">
+					<span>Sort By:</span>
+						<select name="sort" id="sort">
+							<option value="featured" selected>Featured Items</option>
+							<option value="newest" >Newest Items</option>
+							<option value="bestselling" >Best Selling</option>
+							<option value="alphaasc" >A to Z</option>
+							<option value="alphadesc" >Z to A</option>
+							<option value="avgcustomerreview" >By Review</option>
+							<option value="priceasc" >Price: Ascending</option>
+							<option value="pricedesc" >Price: Descending</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<!--中小屏幕筛选-->
+			<div class="my_lg_none p-2">
+				<div class="card border_e5 mb-2">
+					<div class="card-header d-flex justify-content-between align-items-center p-3 bg-white border-0">
+						<span class="my_gray">Brower By & Colors</span>
+						<a data-toggle="collapse" href="#c1" class="my_gray">Show Filters +</a>
+					</div>
+					<div class="collapse" id="c1">
+						<div class="h6 border_e5 p-3">COLOR</div>
+						<div class="card-body p-3">
+							<div class="pt-2 pb-2"><input type="checkbox" class="mr-2" name="color" id="black"><label for="black">Black</label></div>
+							<div class="pt-2 pb-2"><input type="checkbox" class="mr-2" name="color" id="white"><label for="white">Black</label></div>
+							<div class="pt-2 pb-2"><input type="checkbox" class="mr-2" name="color" id="brond"><label for="brond">Black</label></div>
+						</div>
+					</div>
+				</div>
+				<div class="border_e5">
+					<div class="d-flex justify-content-between align-items-center p-3 bg-white border-0">
+						<span class="my_gray">Sort By:</span>
+						<select name="sort2" id="sort2" class="border-0 my_gray">
+							<option value="featured" selected>Featured Items</option>
+							<option value="newest" >Newest Items</option>
+							<option value="bestselling" >Best Selling</option>
+							<option value="alphaasc" >A to Z</option>
+							<option value="alphadesc" >Z to A</option>
+							<option value="avgcustomerreview" >By Review</option>
+							<option value="priceasc" >Price: Ascending</option>
+							<option value="pricedesc" >Price: Descending</option>
+						</select>
+
+					</div>
+				</div>
+			</div>
+			<!--列表-->
+			<div class="row m-0">
+				<!--列表左边-->
+				<div class="col-lg-2 color_style">
+					<div id="parent">
+						<div class="card border-0">
+							<div class="card-header d-flex justify-content-between align-items-center p-0 bg-white border-0">
+								<span class="h6">COLORS</span>
+								<a data-toggle="collapse" href="#color" class="h5 card-link">+</a>
+							</div>
+							<div class="collapse show" id="color">
+								<div class="card-body p-0">
+									<div><input type="checkbox" class="mr-2" name="color" id="black"><label for="black">Black</label></div>
+									<div><input type="checkbox" class="mr-2" name="color" id="white"><label for="white">Black</label></div>
+									<div><input type="checkbox" class="mr-2" name="color" id="brond"><label for="brond">Black</label></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--列表右边-->
+				<div class="col-lg-10 col-sm-12">
+					<div class="row m-0">
+						<!--卡片组-->
+						<div class="card col-lg-4 col-sm-6 col-xs-6 mb-3 border-0">
+							<div class="card-body card_padding position-relative">
+								<div href="#" class="product_img">
+									<a href="#">
+										<img src="images/jxtxc1f3ksbgsy8bw5jo__07010.1539383119.jpg" alt="" class="img-fluid"/>
+									</a>
+									<a href="#" class="quick">Quick View</a>
+								</div>
+
+							</div>
+							<div class="card-footer border-0 text-center bg-white mt-4">
+								<div class="d-flex justify-content-center">
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+								</div>
+								<p class="mb-2"><a href="#" class="product_title">OTTO SENSOR PUMP</a></p>
+								<span class="money_sign">$</span><span class="price">123</span>
+							</div>
+						</div>
+						<div class="card col-lg-4 col-sm-6 col-xs-6 mb-3 border-0">
+							<div class="card-body card_padding position-relative">
+								<div href="#" class="product_img">
+									<a href="#">
+										<img src="images/jxtxc1f3ksbgsy8bw5jo__07010.1539383119.jpg" alt="" class="img-fluid"/>
+									</a>
+									<a href="#" class="quick">Quick View</a>
+								</div>
+
+							</div>
+							<div class="card-footer border-0 text-center bg-white mt-4">
+								<div class="d-flex justify-content-center">
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+								</div>
+								<p class="mb-2"><a href="#" class="product_title">OTTO SENSOR PUMP</a></p>
+								<span class="money_sign">$</span><span class="price">123</span>
+							</div>
+						</div>
+						<div class="card col-lg-4 col-sm-6 col-xs-6 mb-3 border-0">
+							<div class="card-body card_padding position-relative">
+								<div href="#" class="product_img">
+									<a href="#">
+										<img src="images/jxtxc1f3ksbgsy8bw5jo__07010.1539383119.jpg" alt="" class="img-fluid"/>
+									</a>
+									<a href="#" class="quick">Quick View</a>
+								</div>
+
+							</div>
+							<div class="card-footer border-0 text-center bg-white mt-4">
+								<div class="d-flex justify-content-center">
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+								</div>
+								<p class="mb-2"><a href="#" class="product_title">OTTO SENSOR PUMP</a></p>
+								<span class="money_sign">$</span><span class="price">123</span>
+							</div>
+						</div>
+						<div class="card col-lg-4 col-sm-6 col-xs-6 mb-3 border-0">
+							<div class="card-body card_padding position-relative">
+								<div href="#" class="product_img">
+									<a href="#">
+										<img src="images/jxtxc1f3ksbgsy8bw5jo__07010.1539383119.jpg" alt="" class="img-fluid"/>
+									</a>
+									<a href="#" class="quick">Quick View</a>
+								</div>
+
+							</div>
+							<div class="card-footer border-0 text-center bg-white mt-4">
+								<div class="d-flex justify-content-center">
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+								</div>
+								<p class="mb-2"><a href="#" class="product_title">OTTO SENSOR PUMP</a></p>
+								<span class="money_sign">$</span><span class="price">123</span>
+							</div>
+						</div>
+						<div class="card col-lg-4 col-sm-6 col-xs-6 mb-3 border-0">
+							<div class="card-body card_padding position-relative">
+								<div href="#" class="product_img">
+									<a href="#">
+										<img src="images/jxtxc1f3ksbgsy8bw5jo__07010.1539383119.jpg" alt="" class="img-fluid"/>
+									</a>
+									<a href="#" class="quick">Quick View</a>
+								</div>
+
+							</div>
+							<div class="card-footer border-0 text-center bg-white mt-4">
+								<div class="d-flex justify-content-center">
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+								</div>
+								<p class="mb-2"><a href="#" class="product_title">OTTO SENSOR PUMP</a></p>
+								<span class="money_sign">$</span><span class="price">123</span>
+							</div>
+						</div>
+						<div class="card col-lg-4 col-sm-6 col-xs-6 mb-3 border-0">
+							<div class="card-body card_padding position-relative">
+								<div href="#" class="product_img">
+									<a href="#">
+										<img src="images/jxtxc1f3ksbgsy8bw5jo__07010.1539383119.jpg" alt="" class="img-fluid"/>
+									</a>
+									<a href="#" class="quick">Quick View</a>
+								</div>
+
+							</div>
+							<div class="card-footer border-0 text-center bg-white mt-4">
+								<div class="d-flex justify-content-center">
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+								</div>
+								<p class="mb-2"><a href="#" class="product_title">OTTO SENSOR PUMP</a></p>
+								<span class="money_sign">$</span><span class="price">123</span>
+							</div>
+						</div>
+						<div class="card col-lg-4 col-sm-6 col-xs-6 mb-3 border-0">
+							<div class="card-body card_padding position-relative">
+								<div href="#" class="product_img">
+									<a href="#">
+										<img src="images/jxtxc1f3ksbgsy8bw5jo__07010.1539383119.jpg" alt="" class="img-fluid"/>
+									</a>
+									<a href="#" class="quick">Quick View</a>
+								</div>
+
+							</div>
+							<div class="card-footer border-0 text-center bg-white mt-4">
+								<div class="d-flex justify-content-center">
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+								</div>
+								<p class="mb-2"><a href="#" class="product_title">OTTO SENSOR PUMP</a></p>
+								<span class="money_sign">$</span><span class="price">123</span>
+							</div>
+						</div>
+						<div class="card col-lg-4 col-sm-6 col-xs-6 mb-3 border-0">
+							<div class="card-body card_padding position-relative">
+								<div href="#" class="product_img">
+									<a href="#">
+										<img src="images/jxtxc1f3ksbgsy8bw5jo__07010.1539383119.jpg" alt="" class="img-fluid"/>
+									</a>
+									<a href="#" class="quick">Quick View</a>
+								</div>
+
+							</div>
+							<div class="card-footer border-0 text-center bg-white mt-4">
+								<div class="d-flex justify-content-center">
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+								</div>
+								<p class="mb-2"><a href="#" class="product_title">OTTO SENSOR PUMP</a></p>
+								<span class="money_sign">$</span><span class="price">123</span>
+							</div>
+						</div>
+						<div class="card col-lg-4 col-sm-6 col-xs-6 mb-3 border-0">
+							<div class="card-body card_padding position-relative">
+								<div href="#" class="product_img">
+									<a href="#">
+										<img src="images/jxtxc1f3ksbgsy8bw5jo__07010.1539383119.jpg" alt="" class="img-fluid"/>
+									</a>
+									<a href="#" class="quick">Quick View</a>
+								</div>
+
+							</div>
+							<div class="card-footer border-0 text-center bg-white mt-4">
+								<div class="d-flex justify-content-center">
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+								</div>
+								<p class="mb-2"><a href="#" class="product_title">OTTO SENSOR PUMP</a></p>
+								<span class="money_sign">$</span><span class="price">123</span>
+							</div>
+						</div>
+						<div class="card col-lg-4 col-sm-6 col-xs-6 mb-3 border-0">
+							<div class="card-body card_padding position-relative">
+								<div href="#" class="product_img">
+									<a href="#">
+										<img src="images/jxtxc1f3ksbgsy8bw5jo__07010.1539383119.jpg" alt="" class="img-fluid"/>
+									</a>
+									<a href="#" class="quick">Quick View</a>
+								</div>
+
+							</div>
+							<div class="card-footer border-0 text-center bg-white mt-4">
+								<div class="d-flex justify-content-center">
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+								</div>
+								<p class="mb-2"><a href="#" class="product_title">OTTO SENSOR PUMP</a></p>
+								<span class="money_sign">$</span><span class="price">123</span>
+							</div>
+						</div>
+						<div class="card col-lg-4 col-sm-6 col-xs-6 mb-3 border-0">
+							<div class="card-body card_padding position-relative">
+								<div href="#" class="product_img">
+									<a href="#">
+										<img src="images/jxtxc1f3ksbgsy8bw5jo__07010.1539383119.jpg" alt="" class="img-fluid"/>
+									</a>
+									<a href="#" class="quick">Quick View</a>
+								</div>
+
+							</div>
+							<div class="card-footer border-0 text-center bg-white mt-4">
+								<div class="d-flex justify-content-center">
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+								</div>
+								<p class="mb-2"><a href="#" class="product_title">OTTO SENSOR PUMP</a></p>
+								<span class="money_sign">$</span><span class="price">123</span>
+							</div>
+						</div>
+						<div class="card col-lg-4 col-sm-6 col-xs-6 mb-3 border-0">
+							<div class="card-body card_padding position-relative">
+								<div href="#" class="product_img">
+									<a href="#">
+										<img src="images/jxtxc1f3ksbgsy8bw5jo__07010.1539383119.jpg" alt="" class="img-fluid"/>
+									</a>
+									<a href="#" class="quick">Quick View</a>
+								</div>
+
+							</div>
+							<div class="card-footer border-0 text-center bg-white mt-4">
+								<div class="d-flex justify-content-center">
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+									<a href="#" class="thumbnail"><img src="images/2860.preview.webp" class="img-fluid" alt=""/></a>
+								</div>
+								<p class="mb-2"><a href="#" class="product_title">OTTO SENSOR PUMP</a></p>
+								<span class="money_sign">$</span><span class="price">123</span>
+							</div>
+						</div>
+						<!--卡片组结束-->
+					</div>
+					<!--页码-->
+					<ul class="pagination justify-content-between mt-4 mb-4 page_display">
+						<li class="page-item ml-3"><a href="#" class="page_style">&lt;  Previous</a></li>
+						<div class="flex-row d-flex">
+							<li class="page-item"><a href="#" class="page_style active">1</a></li>
+							<li class="page-item"><a href="#" class="page_style">2</a></li>
+							<li class="page-item"><a href="#" class="page_style">3</a></li>
+							<li class="page-item"><a href="#" class="page_style">4</a></li>
+							<li class="page-item"><a href="#" class="page_style">5</a></li>
+							<li class="page-item"><a href="#" class="page_style">6</a></li>
+							<li class="page-item"><a href="#" class="page_style">7</a></li>
+						</div>
+						<li class="page-item mr-3"><a href="#" class="page_style">Next  &gt;</a></li>
+					</ul>
+				</div>
+			</div>
 			<!--about us-->
 			<div class="about_us">
 				<div class="d-flex flex-wrap justify-content-between">
