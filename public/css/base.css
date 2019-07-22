@@ -6,6 +6,63 @@ iframe{
 	padding:0;
 	margin:0;
 }
+/*自定义字体*/
+@font-face{
+    font-family: "Gotham SSm";
+    src: url("../font/GothamSSm-Book.otf");
+}
+@font-face {
+    font-family: "bdfont";
+    src: url("../font/bdfont.eot"); /* IE9 */
+    src: url("../font/bdfont.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../font/bdfont.woff") format("woff"), /* chrome¡¢firefox */
+    url("../font/bdfont.ttf") format("truetype"), /* chrome¡¢firefox¡¢opera¡¢Safari, Android, iOS 4.2+ */
+    url("../font/bdfont.svg#uxfonteditor") format("svg"); /* iOS 4.1- */
+}
+.icon {
+    font-family: "bdfont" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*自定义字体*/
+body{
+	font-family:"Gotham SSm";
+}
+/*字体图标*/
+.search{
+	font-size: 1.5rem
+}
+.drop_down_icon{
+	 font-size: 0.75rem;
+	 vertical-align: middle;
+}
+.favorite{
+	font-size: 1.3rem;
+}
+.shop_car{
+    position: relative;
+    font-size: 1.3rem;
+}
+#count{
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    font-size: 0.75rem;
+    background: #fff;
+    border-radius: 50%;
+    color: #000;
+    text-align: center;
+    line-height: 1rem;
+    top:-9px;
+    right: -9px;
+}
+/*字体图标*/
 .my_gray{
 	color: #757575;
 	font-size: 0.87rem;
@@ -20,7 +77,7 @@ a:hover{
 	position:fixed;
 	z-index:1001;
 }
-.footer{
+.ifooter{
 	height:21rem;
 }
 .carousel-item img{
@@ -35,7 +92,10 @@ a:hover{
 .a_black{
 	color:#000;
 }
-/*�ֲ�ͼ����*/
+/*ÂÖ²¥Í¼×ÖÌå*/
+.carousel .carousel-item{
+	max-height: 52rem;
+}
 .carousel-caption{
 	left:10%;
 	bottom:28%;
@@ -62,12 +122,18 @@ a:hover{
 	text-decoration: none;
 	background: #333;
 }
-/*�ֲ�ͼ��ť*/
-.carousel-control-prev,
-.carousel-control-next{
-	width:2rem;
+/*ÂÖ²¥Í¼°´Å¥*/
+.carousel-control-prev{
+	width:2rem !important;
 	background: #fff;
-	height: 6rem;
+	height: 6rem !important;
+	top:45%;
+	margin:0 0.5rem 0;
+}
+.carousel-control-next{
+	width:2rem !important;
+	background: #fff;
+	height: 6rem !important;
 	top:45%;
 	margin:0 0.5rem 0;
 }
@@ -77,7 +143,7 @@ a:hover{
 .carousel-control-next-icon{
 	background-image:url("../images/right.svg");
 }
-/*��ҳ����h1*/
+/*Ê×Ò³±êÌâh1*/
 .index_title{
 	text-align: center;
 	font-size: 1.9rem;
@@ -86,7 +152,7 @@ a:hover{
 	margin-top:1.75rem;
 	margin-bottom: 0.87rem;
 }
-/*δ������ʿ*/
+/*Î´À´¸ÛÈËÊ¿*/
 .ul_style{
 	display:flex;
 	justify-content: space-between;
@@ -117,11 +183,11 @@ a:hover{
 	color:#666;
 	padding:0.8rem 0 0.8rem;
 }
-/*card��Ʒ����*/
+/*cardÉÌÆ·±êÌâ*/
 .products{
 	position: relative;
 }
-/*��Ʒ����*/
+/*ÉÌÆ·¿í¶È*/
 .card_padding{
 	padding:0 10% 0;
 }
@@ -142,7 +208,7 @@ a:hover{
 	text-align: right;
 	z-index: 99;
 }
-.products-prev .carousel-control-prev-icon,.carousel-control-next-icon{
+.carousel-control-prev-icon,.carousel-control-next-icon{
 	width: 2.5rem;
 	height: 2.5rem;
 }
@@ -245,7 +311,7 @@ a:hover{
 .inspired{
 	background:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url(../images/stay-inspired.jpg);
 }
-/*���������*/
+/*µ¼º½Ìî³äÎï*/
 .fill{
 	width:100%;
 	height:6.5rem
@@ -407,7 +473,41 @@ input[type=checkbox]:checked{
 .careers{
 	background:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url(../images/AboutPage_CareersBanner.jpg);
 }
-/*ý���ѯ*/
+/*design with us*/
+.design_us{
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	width: 100%;
+	background: none;
+	align-items: center;
+}
+.design_width{
+	margin-left: 6%;
+	width: 31rem;
+}
+.design_us .design_width a{
+	background: #000;
+	color:#fff;
+}
+.design_us .design_width a:hover{
+	background: #fff;
+	border: 1px solid #000;
+	color: #000;
+}
+
+.design_us h1,.design_us a,.design_us span{
+	color: #000;
+}
+.design_us img{
+	width: 50%;
+}
+/*umbra shift*/
+.Ushift{
+	display: block;
+	padding: 5rem;
+}
+/*Ã½Ìå²éÑ¯*/
 @media screen and (min-width:992px){
 	.color_style{
 		display: block;
