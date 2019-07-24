@@ -1,5 +1,6 @@
 body{
 	background: #000;
+	font-family:"Gotham SSm";
 }
 iframe{
 	width:100%;
@@ -30,12 +31,11 @@ iframe{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-/*自定义字体*/
-body{
-	font-family:"Gotham SSm";
-}
 /*字体图标*/
-
+.umbra_width{
+	max-width: 1360px;
+	margin: 0 auto;
+}
 .search{
 	font-size: 1.5rem
 }
@@ -523,13 +523,89 @@ input[type=checkbox]:checked{
 	max-width:1360px;
 }
 .umbra_shift_logo{
-	padding: 7rem 0;
+	padding: 5rem 0;
 	text-align: center;
 }
 .umbra_shift_logo img{
 	width: 7rem;
 }
-/*Ã½Ìå²éÑ¯*/
+.us_about{
+	text-align: center;
+	margin: 0 auto;
+	width: 80%;
+	max-width: 953px;
+}
+.us_about p{
+	margin-top:5rem;
+	font-weight: bold;
+}
+/*design stories*/
+.stories_title{
+	color: #000;
+	font-size: 1.5rem;
+	transition: 1s;
+	margin: 0.625rem 0;
+}
+.release_time{
+	color:#757575;
+	font-size: 0.78rem;
+	margin-bottom: 0.8rem;
+}
+.describe,.read_more{
+	color: #333333;
+	margin-bottom: 0.625rem;
+}
+.stories_title:hover,.read_more:hover{
+	color:#757575;
+}
+/*sing in*/
+.sing_title{
+	padding:2rem 0 3rem 0;
+}
+.sing_font{
+	max-width: 56.25rem;
+	margin: 0 auto;
+	color:#333;
+}
+.sing_font h6{
+	font-size:0.9rem;
+	font-weight: bold;
+	margin-bottom: 1.35rem;
+}
+.sing_font a{
+	text-decoration: underline;
+	color: #333;
+	font-weight: bold;
+}
+.sing_font a:hover{
+	color: #757575;
+}
+.sing_font p{
+	margin-bottom: 1.35rem;
+}
+.sing_font span{
+	font-size:0.9rem;
+}
+#sing_button{
+	font-size:0.9rem;
+	display: inline-block;
+	color: #fff;
+	background: #000;
+	padding: 0.75rem 2rem;
+	height: 2.5rem;
+	line-height: 1.3rem;
+	text-align: center;
+	text-decoration: none;
+	transition: 0.3s;
+}
+#sing_button:hover{
+	background: #757575;
+	color:#fff;
+}
+.sing_font ul li{
+	font-size:0.9rem;
+}
+/*媒体查询*/
 @media screen and (min-width:992px){
 	.color_style{
 		display: block;
@@ -543,6 +619,9 @@ input[type=checkbox]:checked{
 }
 
 @media screen and (min-width:768px) and (max-width:991px){
+	.us_about{
+		width: 95%;
+	}
 	.umbra_shift_width{
 		width: 100%;
 	}
@@ -591,6 +670,15 @@ input[type=checkbox]:checked{
 }
 
 @media screen and (max-width:767px){
+	.col-xs-12 {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.us_about{
+		width: 95%;
+	}
 	.col-xs-6 {
 		-webkit-box-flex: 0;
 		-ms-flex: 0 0 50%;
