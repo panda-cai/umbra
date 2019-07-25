@@ -7,7 +7,7 @@ iframe{
 	padding:0;
 	margin:0;
 }
-/*自定义字体*/
+/*自定义字�?*/
 @font-face{
     font-family: "Gotham SSm";
     src: url("../font/GothamSSm-Book.otf");
@@ -67,6 +67,10 @@ iframe{
 /*字体图标*/
 .my_font666{
 	color: #666;
+	font-size: 0.87rem;
+}
+.my_font333{
+	color: #333;
 	font-size: 0.87rem;
 }
 .my_gray{
@@ -129,14 +133,7 @@ a:hover{
 	background: #333;
 }
 /*ÂÖ²¥Í¼°´Å¥*/
-.carousel-control-prev{
-	width:2rem !important;
-	background: #fff;
-	height: 6rem !important;
-	top:45%;
-	margin:0 0.5rem 0;
-}
-.carousel-control-next{
+.carousel-control-next,.carousel-control-prev{
 	width:2rem !important;
 	background: #fff;
 	height: 6rem !important;
@@ -707,6 +704,9 @@ input[type=checkbox]:checked{
 	background: #ddd;
 	font-size: 0.87rem;
 	margin:3rem 0;
+}
+.comment_ico{
+	top:25%;
 }
 /*媒体查询*/
 @media screen and (min-width:992px){
