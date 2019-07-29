@@ -7,7 +7,7 @@ iframe{
 	padding:0;
 	margin:0;
 }
-/*自定义字�?*/
+/* 自定义字体 */
 @font-face{
     font-family: "Gotham SSm";
     src: url("../font/GothamSSm-Book.otf");
@@ -707,6 +707,44 @@ input[type=checkbox]:checked{
 }
 .comment_ico{
 	top:25%;
+}
+/* shopping car */
+.table th, .table td {
+	border:0;
+	border-bottom: 1px solid #dee2e6;
+	vertical-align: middle;
+}
+.{
+	width: 10%;
+}
+.car-item-img{
+	width: 10%;
+}
+.car-item-name a{
+	font-size: 1rem;
+	font-weight: 1000;
+	color: #333;
+}
+.car-item-name a:hover{
+	text-decoration: underline;
+}
+.car-item-change a{
+	font-size: 0.87rem;
+	font-weight: 1000;
+	color: #333;
+}
+.car-item-change a:hover{
+	text-decoration: underline;
+}
+.car-item-quantity input{
+	width: 6%;
+}
+.car-item-price{
+	width: 35%;
+	text-align: center;
+}
+.car-total{
+	width: 50%;
 }
 /*媒体查询*/
 @media screen and (min-width:992px){

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- 引入boot,顺序必须一致-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/header&footer.css">
+</head>
+<body>
+		<!--<iframe src="header.html" frameborder="0" scrolling="no" class="header"></iframe>-->
+    <div class="container-fluid p-0">
+		<!--导航-->
+		<div class="navbar navbar-expand-lg bg_black navbar-dark header w-100">
+			<img src="images/umbra_logo_white_1548696100__46967.original.webp" alt="" class="img-fluid logo_display_big">
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#content"><span class="navbar-toggler-icon"></span></button>
+			<img src="images/umbra-logo.webp" alt="" class="img-fluid logo_size logo_display">
+			<ul class="nav d-flex d-lg-none list-unstyled">
+				<li class="nav-item"><a href="#" class="nav-link a_white">Shopping car</a></li>
+				<li class="nav-item"><a href="#" class="nav-link a_white">Collect</a></li>
+			</ul>
+			<!--下拉菜单-->
+			<div class="collapse navbar-collapse justify-content-between mt-lg-5 bg_black" id="content">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a href="#" class="nav-link">Products</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">About</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Design With US</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Umbra Shift</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Disign Stories</a></li>
+				</ul>
+				<ul class="navbar-nav">
+					<li class="nav-item"><a href="#" class="nav-link">Search</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">USD</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Sign in</a></li>
+					<li class="nav-item d-lg-block d-sm-none"><a href="#" class="nav-link">Shopping car</a></li>
+					<li class="nav-item d-sm-none d-lg-block"><a href="#" class="nav-link">Collect</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="fill"></div>
+		<div class="bg-white m-lg-3">
+			<div class="umbra_width">
+				<div class="p-2">
+					<h1 class="index_title">Your Cart (3 items)</h1>
+					<table class="table">
+						<thead>
+							<tr>
+								<th colspan="2">Item</th>
+								<th style="text-align: center">Price</th>
+								<th>Quantity</th>
+								<th>Total</th>
+							</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="car-item-img"><img src="images/shoppingcar.webp" alt=""></td>
+							<td>
+								<h4 class="car-item-name"><a href="#">OTTO SENSOR PUMP</a></h4>
+								<h5><span class="my_gray">Color:
+										Black-Nickel</span></h5>
+								<h5 class="car-item-change"><a href="#">Change</a></h5>
+							</td>
+							<td class="car-item-price"><span class="my_gray">$28.00</span></td>
+							<td>
+									<div class="detail_quantity car-item-quantity">
+											<button><span class="icon">&#xe001;</span></button>
+											<input type="text" value="1"/>
+											<button><span class="icon">&#xe005;</span></button>
+									</div>
+							</td>
+							<td>
+								<span class="my_font333 font-weight-bold">$56</span>
+								<a href="#">删除</a>
+							</td>
+						</tr>
+						<tr>
+								<td class="car-item-img"><img src="images/shoppingcar.webp" alt=""></td>
+								<td>
+									<h4 class="car-item-name"><a href="#">OTTO SENSOR PUMP</a></h4>
+									<h5><span class="my_gray">Color:
+											Black-Nickel</span></h5>
+									<h5 class="car-item-change"><a href="#">Change</a></h5>
+								</td>
+								<td class="car-item-price"><span class="my_gray">$28.00</span></td>
+								<td>
+										<div class="detail_quantity car-item-quantity">
+												<button><span class="icon">&#xe001;</span></button>
+												<input type="text" value="1"/>
+												<button><span class="icon">&#xe005;</span></button>
+										</div>
+								</td>
+								<td>
+									<span class="my_font333 font-weight-bold">$56</span>
+									<a href="#">删除</a>
+								</td>
+							</tr>
+							<tr>
+									<td class="car-item-img"><img src="images/shoppingcar.webp" alt=""></td>
+									<td>
+										<h4 class="car-item-name"><a href="#">OTTO SENSOR PUMP</a></h4>
+										<h5><span class="my_gray">Color:
+												Black-Nickel</span></h5>
+										<h5 class="car-item-change"><a href="#">Change</a></h5>
+									</td>
+									<td class="car-item-price"><span class="my_gray">$28.00</span></td>
+									<td>
+											<div class="detail_quantity car-item-quantity">
+													<button><span class="icon">&#xe001;</span></button>
+													<input type="text" value="1"/>
+													<button><span class="icon">&#xe005;</span></button>
+											</div>
+									</td>
+									<td>
+										<span class="my_font333 font-weight-bold">$56</span>
+										<a href="#">删除</a>
+									</td>
+								</tr>
+					</tbody>
+					</table>
+					<div class="clearfix">
+						<ul class="list-unstyled float-right list-group w-50">
+							<li class="py-3"><div class="w-50 float-left">Subtotal:</div><div class="w-50 float-left text-right my_gray">$88.00</div></li>
+							<li><span class="h5 text-left">Subtotal:</span><span class="my_gray text-right">$88.00</span></li>
+							<li><span class="h5 text-left">Subtotal:</span><span class="my_gray text-right">$88.00</span></li>
+							
+						</ul>
+				</div>
+				</div>
+			</div>
+			<!--about us-->
+			<div class="about_us">
+				<div class="d-flex flex-wrap justify-content-between">
+					<div class="store mb-3">
+						<div class="store_width">
+							<h1>Design With Us</h1>
+							<span>Umbra is a Toronto-based company born over 30 years ago.</span>
+							<a href="#">Learn More</a>
+						</div>
+					</div>
+					<div class="store inspired mb-3">
+						<div class="store_width">
+							<h1>Stay Inspired</h1>
+							<span>Sign up for our newsletter and stay up to date on our latest news and products</span>
+							<a href="#">Subscribe</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+		<iframe src="footer.html" frameborder="0" scrolling="no" class="ifooter"></iframe>
+</body>
+</html>
