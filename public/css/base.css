@@ -714,37 +714,91 @@ input[type=checkbox]:checked{
 	border-bottom: 1px solid #dee2e6;
 	vertical-align: middle;
 }
-.{
+.cart-img{
 	width: 10%;
 }
-.car-item-img{
-	width: 10%;
+.cart-info{
+	width: 16.66667%;
 }
-.car-item-name a{
-	font-size: 1rem;
-	font-weight: 1000;
-	color: #333;
-}
-.car-item-name a:hover{
-	text-decoration: underline;
-}
-.car-item-change a{
+.cart-info span{
+	color: #999;
 	font-size: 0.87rem;
-	font-weight: 1000;
+}
+.cart-info span:last-child{
 	color: #333;
 }
-.car-item-change a:hover{
+.cart-info span:first-child{
+	margin-bottom:0.5rem;
+}
+.cart-name{
+	padding: 1.5rem;
+}
+.cart-name a{
+	color: #333;
+	font-weight: bold;
+	display: block;
+	font-size: 0.9rem;
+
+}
+.cart-name a:hover{
+	color: #757575;
 	text-decoration: underline;
 }
-.car-item-quantity input{
-	width: 6%;
+
+.cart-name span:last-child{
+	color: #333;
 }
-.car-item-price{
-	width: 35%;
+.definitionList::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.definitionList{
+	margin: 0.5rem 0 0.5rem 0;
+}
+.definitionList dt{
+	color: #757575;
+	font-size:0.87rem;
+	font-weight: 400; 
+	float: left;
+} 
+.definitionList dd{
+	color: #333;
+	font-size:0.87rem; 
+	float: left;
+	margin: 0;
+}
+.cart-buttons{
+	display: flex;
+	justify-content: center;
+}
+.cart-buttons input{
+	border: 0;
+	color: #333;
+	font-size:0.87rem; 
+	float: left;
+	width: 2rem;
+
+}
+.cart-buttons button{
+	margin-bottom:0.2rem; 
+	background: #fff;
+	border:1px #ccc solid;
+	padding: 0.2rem 0.3rem;
+	transition: all 0.5s
+}
+.cart-buttons button:hover{
+	border-color: #666;
+}
+.cart-delete{
+	display: inline-block;
+	border-radius:50%;
+	background: #e5e5e5; 
+	width: 1.2rem;
+	height: 1.2rem;
 	text-align: center;
-}
-.car-total{
-	width: 50%;
+	color: #333;
+	margin-left: 1rem;
 }
 /*媒体查询*/
 @media screen and (min-width:992px){
@@ -760,6 +814,12 @@ input[type=checkbox]:checked{
 }
 
 @media screen and (min-width:768px) and (max-width:991px){
+	.cart-delete{
+		display: block;
+	}
+	.table>thead{
+		display: none;
+	}
 	.us_about{
 		width: 95%;
 	}
@@ -811,6 +871,16 @@ input[type=checkbox]:checked{
 }
 
 @media screen and (max-width:767px){
+	.cart-delete{
+		display: block;
+		text-align: right;
+	}
+	.d-xs-inline{
+		display: inline;
+	}
+	.table>thead{
+		display: none;
+	}
 	.py-xs-3{
 		padding: 1rem 0;
 	}

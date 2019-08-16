@@ -47,80 +47,45 @@
 			<div class="umbra_width">
 				<div class="p-2">
 					<h1 class="index_title">Your Cart (3 items)</h1>
+					<!-- 购物车列表 -->
 					<table class="table">
 						<thead>
 							<tr>
-								<th colspan="2">Item</th>
-								<th style="text-align: center">Price</th>
-								<th>Quantity</th>
-								<th>Total</th>
+								<th colspan="2" class="text-left">Item</th>
+								<th class="text-left">Price</th>
+								<th class="text-center">Quantity</th>
+								<th class="text-right">Total</th>
 							</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="car-item-img"><img src="images/shoppingcar.webp" alt=""></td>
-							<td>
-								<h4 class="car-item-name"><a href="#">OTTO SENSOR PUMP</a></h4>
-								<h5><span class="my_gray">Color:
-										Black-Nickel</span></h5>
-								<h5 class="car-item-change"><a href="#">Change</a></h5>
-							</td>
-							<td class="car-item-price"><span class="my_gray">$28.00</span></td>
-							<td>
-									<div class="detail_quantity car-item-quantity">
-											<button><span class="icon">&#xe001;</span></button>
-											<input type="text" value="1"/>
-											<button><span class="icon">&#xe005;</span></button>
+						</thead> 
+						<tbody class="cart-list">
+							<tr class="cart-item">
+								<td class="cart-img"><img src="images/shoppingcar.jpg" alt=""></td>
+								<td class="cart-name">
+									<a href="">OTTO SENSOR PUMP</a>
+									<dl class="definitionList">
+										<dt>color:</dt>
+										<dd>Black-Nickel</dd>
+									</dl>
+									<a href="#">change</a>
+								</td>
+								<td class="cart-info">
+									<span class="d-lg-none d-sm-block d-xs-inline">Price</span>
+									<span class="price d-sm-block d-xs-inline">$28</span>
+								</td>
+								<td class="cart-info">
+									<span class="d-lg-none d-sm-block d-xs-inline text-center">Quantity:</span>
+									<div class="cart-buttons">
+										<button class="icon">&#xe007;</button>
+										<input type="text" value="1" class="text-center">
+										<button class="icon">&#xe008;</button>
 									</div>
-							</td>
-							<td>
-								<span class="my_font333 font-weight-bold">$56</span>
-								<a href="#">删除</a>
-							</td>
-						</tr>
-						<tr>
-								<td class="car-item-img"><img src="images/shoppingcar.webp" alt=""></td>
-								<td>
-									<h4 class="car-item-name"><a href="#">OTTO SENSOR PUMP</a></h4>
-									<h5><span class="my_gray">Color:
-											Black-Nickel</span></h5>
-									<h5 class="car-item-change"><a href="#">Change</a></h5>
 								</td>
-								<td class="car-item-price"><span class="my_gray">$28.00</span></td>
-								<td>
-										<div class="detail_quantity car-item-quantity">
-												<button><span class="icon">&#xe001;</span></button>
-												<input type="text" value="1"/>
-												<button><span class="icon">&#xe005;</span></button>
-										</div>
-								</td>
-								<td>
-									<span class="my_font333 font-weight-bold">$56</span>
-									<a href="#">删除</a>
+								<td class="cart-info">
+									<span class="d-lg-none d-sm-block d-xs-inline text-right">Total:</span>
+									<span class="price d-sm-block d-xs-inline text-right">$28<a href="#" class="cart-delete">&times;</a></span>	
 								</td>
 							</tr>
-							<tr>
-									<td class="car-item-img"><img src="images/shoppingcar.webp" alt=""></td>
-									<td>
-										<h4 class="car-item-name"><a href="#">OTTO SENSOR PUMP</a></h4>
-										<h5><span class="my_gray">Color:
-												Black-Nickel</span></h5>
-										<h5 class="car-item-change"><a href="#">Change</a></h5>
-									</td>
-									<td class="car-item-price"><span class="my_gray">$28.00</span></td>
-									<td>
-											<div class="detail_quantity car-item-quantity">
-													<button><span class="icon">&#xe001;</span></button>
-													<input type="text" value="1"/>
-													<button><span class="icon">&#xe005;</span></button>
-											</div>
-									</td>
-									<td>
-										<span class="my_font333 font-weight-bold">$56</span>
-										<a href="#">删除</a>
-									</td>
-								</tr>
-					</tbody>
+						</tbody>
 					</table>
 					<div class="clearfix">
 						<ul class="list-unstyled float-right list-group w-50">
