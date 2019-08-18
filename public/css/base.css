@@ -709,20 +709,27 @@ input[type=checkbox]:checked{
 	top:25%;
 }
 /* shopping car */
-.table th, .table td {
+.table tr{
 	border:0;
 	border-bottom: 1px solid #dee2e6;
 	vertical-align: middle;
 }
+.table th, .table td {
+	padding: 0.5rem;
+	border-top:0;
+	vertical-align:middle;
+}
 .cart-img{
-	width: 10%;
+	/* width: 10%; */
+	margin: 0 auto;
 }
 .cart-info{
-	width: 16.66667%;
+	width: 16.6667%;
 }
 .cart-info span{
 	color: #999;
 	font-size: 0.87rem;
+
 }
 .cart-info span:last-child{
 	color: #333;
@@ -776,7 +783,6 @@ input[type=checkbox]:checked{
 	border: 0;
 	color: #333;
 	font-size:0.87rem; 
-	float: left;
 	width: 2rem;
 
 }
@@ -784,7 +790,7 @@ input[type=checkbox]:checked{
 	margin-bottom:0.2rem; 
 	background: #fff;
 	border:1px #ccc solid;
-	padding: 0.2rem 0.3rem;
+	padding: 0 0.3rem 0.3rem 0.3rem;
 	transition: all 0.5s
 }
 .cart-buttons button:hover{
@@ -798,10 +804,61 @@ input[type=checkbox]:checked{
 	height: 1.2rem;
 	text-align: center;
 	color: #333;
-	margin-left: 1rem;
+	/* margin-left: 1rem; */
+	float:right;
+}
+.cart-totals{
+	width: 50%;
+	/* max-width: 33rem; */
+	float: right;
+	/* text-align: right */
+}
+.cart-totals li:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.cart-totals li+li{
+	border-top: 1px solid #e5e5e5;
+}
+.cart-totals li div{
+	width: 50%;
+	float: left;
+}
+.cart-totals li div:first-child{
+	color:#757575;
+	font-size: 0.87rem;
+	font-weight: bold;
+}
+.cart-totals li div:last-child{
+	text-align: right;
+}
+.subtotal{
+	font-size: 0.87rem;
+	color: #333;
+}
+.grand-total{
+	font-size: 1.25rem;
+	color: #333;
+}
+.coupon{
+	color: #757575;
+	text-decoration: underline;
+	font-size: 0.87rem;
+	transition:color 0.3s;
+}
+.coupon:hover{
+	color: #000;
+	text-decoration: underline;
+}
+.totals-item{
+	padding: 1rem 0;
 }
 /*媒体查询*/
 @media screen and (min-width:992px){
+	.cart-img{
+		width: 10%;
+	}
 	.color_style{
 		display: block;
 	}
@@ -813,9 +870,62 @@ input[type=checkbox]:checked{
 	}
 }
 
-@media screen and (min-width:768px) and (max-width:991px){
-	.cart-delete{
+@media screen and (min-width:577px) and (max-width:991px){
+	.cart-totals{
+		width: 75%;
+	}
+	.cart-totals li+li{
+		border: 0;
+	}
+	.cart-totals li{
+		padding: 0.5rem 0;
+	}
+	.cart-totals li div:first-child{
+		text-align: right;
+		line-height: 1.2rem;
+		padding-left:0.8rem; 
+	}
+	.cart-totals li div:last-child{
+		text-align: left;
+		line-height: 1.2rem;
+		padding-left:0.8rem;
+	}
+
+	.cart-buttons{
+		justify-content: flex-start;
+	}
+	.cart-item:before{
+		content: "";
+		display: table;
+	}
+	.cart-item{
+		padding-left:33.333%;
+	}
+	.cart-item::after{
+		content: "";
 		display: block;
+		clear: both;
+	}
+	.cart-img{
+		display:block;
+		float: left;
+		/* width: 33.333%; */
+		text-align: left !important;
+	}
+	.cart-img>img{
+		margin:0 2rem;
+	}
+	.cart-name{
+		display:block;
+		float: left;
+		width: 66.666%;
+		text-align: left !important;
+	}
+	.cart-info{
+		display:block;
+		float: left;
+		width: 22%;
+		text-align: left;
 	}
 	.table>thead{
 		display: none;
@@ -870,11 +980,71 @@ input[type=checkbox]:checked{
 	}
 }
 
-@media screen and (max-width:767px){
-	.cart-delete{
-		display: block;
+@media screen and (max-width:576px){
+	.w-xs-100{
+		width: 100% !important;
+	}
+	.cart-totals{
+		width: 100%;
+	}
+	.cart-totals li+li{
+		border: 0;
+	}
+	.cart-totals li{
+		padding: 0.5rem 0;
+	}
+	.cart-totals li div:first-child{
+		text-align: right;
+		line-height: 1.2rem;
+		padding-left:0.8rem; 
+	}
+	.cart-totals li div:last-child{
+		text-align: left;
+		line-height: 1.2rem;
+		padding-left:0.8rem;
+	}
+
+	.cart-info span:first-child{
+		width: 34%;
 		text-align: right;
 	}
+	.cart-info span:last-child{
+		width: 64%;
+		padding-left: 0.5rem;
+	}
+	.cart-info div{
+		padding-left: 0.5rem;
+	}
+	.cart-buttons{
+		display: inline-block;
+		justify-content: flex-start;
+	}
+	.cart-list{
+		padding-left:33.333%;
+	}
+	.cart-img{
+		display:block;
+		float: left;
+		width: 33.333%;
+		text-align: left !important;
+	}
+	.cart-name{
+		display:block;
+		float: left;
+		width: 66.666%;
+		text-align: left !important;
+	}
+	.cart-info{
+		display:block;
+		float: left;
+		width: 100%;
+		text-align: left;
+	}
+	.cart-info>span,.cart-info>div{
+		display: inline-block;
+	}
+
+
 	.d-xs-inline{
 		display: inline;
 	}

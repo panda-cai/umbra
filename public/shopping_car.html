@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!-- 引入boot,顺序必须一致-->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<!-- 引入boot,顺序必须一致-->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.js"></script>
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/header&footer.css">
 </head>
+
 <body>
-		<!--<iframe src="header.html" frameborder="0" scrolling="no" class="header"></iframe>-->
-    <div class="container-fluid p-0">
+	<!--<iframe src="header.html" frameborder="0" scrolling="no" class="header"></iframe>-->
+	<div class="container-fluid p-0">
 		<!--导航-->
 		<div class="navbar navbar-expand-lg bg_black navbar-dark header w-100">
 			<img src="images/umbra_logo_white_1548696100__46967.original.webp" alt="" class="img-fluid logo_display_big">
-			<button class="navbar-toggler" data-toggle="collapse" data-target="#content"><span class="navbar-toggler-icon"></span></button>
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#content"><span
+					class="navbar-toggler-icon"></span></button>
 			<img src="images/umbra-logo.webp" alt="" class="img-fluid logo_size logo_display">
 			<ul class="nav d-flex d-lg-none list-unstyled">
 				<li class="nav-item"><a href="#" class="nav-link a_white">Shopping car</a></li>
@@ -56,7 +59,7 @@
 								<th class="text-center">Quantity</th>
 								<th class="text-right">Total</th>
 							</tr>
-						</thead> 
+						</thead>
 						<tbody class="cart-list">
 							<tr class="cart-item">
 								<td class="cart-img"><img src="images/shoppingcar.jpg" alt=""></td>
@@ -69,11 +72,11 @@
 									<a href="#">change</a>
 								</td>
 								<td class="cart-info">
-									<span class="d-lg-none d-sm-block d-xs-inline">Price</span>
-									<span class="price d-sm-block d-xs-inline">$28</span>
+									<span class="d-lg-none d-sm-block">Price</span>
+									<span class="price d-sm-block">$28.00</span>
 								</td>
 								<td class="cart-info">
-									<span class="d-lg-none d-sm-block d-xs-inline text-center">Quantity:</span>
+									<span class="d-lg-none d-sm-block">Quantity:</span>
 									<div class="cart-buttons">
 										<button class="icon">&#xe007;</button>
 										<input type="text" value="1" class="text-center">
@@ -81,20 +84,30 @@
 									</div>
 								</td>
 								<td class="cart-info">
-									<span class="d-lg-none d-sm-block d-xs-inline text-right">Total:</span>
-									<span class="price d-sm-block d-xs-inline text-right">$28<a href="#" class="cart-delete">&times;</a></span>	
+									<span class="d-lg-none d-sm-block">Total:</span>
+									<span class="price d-sm-block font-weight-bold">$28.00<a href="#"
+											class="cart-delete">&times;</a></span>
 								</td>
 							</tr>
 						</tbody>
 					</table>
-					<div class="clearfix">
-						<ul class="list-unstyled float-right list-group w-50">
-							<li class="py-3"><div class="w-50 float-left">Subtotal:</div><div class="w-50 float-left text-right my_gray">$88.00</div></li>
-							<li><span class="h5 text-left">Subtotal:</span><span class="my_gray text-right">$88.00</span></li>
-							<li><span class="h5 text-left">Subtotal:</span><span class="my_gray text-right">$88.00</span></li>
-							
+						<ul class="list-unstyled cart-totals mt-3">
+							<li class="totals-item">
+								<div><span>Subtotal:</span></div>
+								<div><span class="price subtotal">$116.00</span></div>
+							</li>
+							<li class="totals-item">
+									<div><span>Coupon Code:</span></div>
+									<div><a href="#" class="coupon">Add Coupon</a></div>
+								</li>
+								<li class="totals-item">
+										<div><span>Grand total:</span></div>
+										<div><span class="price grand-total">$116.00</span></div>
+								</li>
 						</ul>
-				</div>
+						<div class="clearfix"></div>
+						<a href="#" id="sing_button" class="float-right mb-5 w-xs-100">Check out</a>
+						<div class="clearfix"></div>
 				</div>
 			</div>
 			<!--about us-->
@@ -117,7 +130,8 @@
 				</div>
 			</div>
 		</div>
-    </div>
-		<iframe src="footer.html" frameborder="0" scrolling="no" class="ifooter"></iframe>
+	</div>
+	<iframe src="footer.html" frameborder="0" scrolling="no" class="ifooter"></iframe>
 </body>
+
 </html>
