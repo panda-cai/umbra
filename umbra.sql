@@ -36,3 +36,20 @@ CREATE TABLE umbra_product(
 );
 #向表中插入数据
 INSERT INTO umbra_user VALUES(1,"godezero@live.com","123456","中国","蔡盛达","广东省广州市白云区江夏村","13416292389");
+-- 创建商品分类表
+CREATE TABLE productClass(
+	cid INT PRIMARY KEY AUTO_INCREMENT,
+	classname VARCHAR(32)
+);
+#向表中插入数据
+INSERT INTO productClass VALUES(1,"New Arrivals"),
+(2,"Frames"),
+(3,"Wall Decor"),
+(4,"Jewelry Storage"),
+(5,"Furniture"),
+(6,"Accessories"),
+(7,"Hooks & Closet"),
+(8,"Bath"),
+(9,"Kitchen"),
+(10,"Trash Cans"),
+(11,"Window");

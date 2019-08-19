@@ -16,33 +16,39 @@
 		<!--<iframe src="header.html" frameborder="0" scrolling="no" class="header"></iframe>-->
     <div class="container-fluid p-0">
 		<!--导航-->
-		<div class="navbar navbar-expand-lg bg_black navbar-dark header w-100">
+		<div class="navbar navbar-expand-lg bg_black navbar-dark w-100">
 			<img src="images/umbra_logo_white_1548696100__46967.original.webp" alt="" class="img-fluid logo_display_big">
 			<button class="navbar-toggler" data-toggle="collapse" data-target="#content"><span class="navbar-toggler-icon"></span></button>
 			<img src="images/umbra-logo.webp" alt="" class="img-fluid logo_size logo_display">
 			<ul class="nav d-flex d-lg-none list-unstyled">
-				<li class="nav-item"><a href="#" class="nav-link a_white">Shopping car</a></li>
-				<li class="nav-item"><a href="#" class="nav-link a_white">Collect</a></li>
+				<li class="nav-item"><a href="#" class="nav-link a_white"><span class="icon shop_car">&#xe001;<span id="count">1</span></span></a></li>
+				<li class="nav-item"><a href="#" class="nav-link a_white"><span class="icon favorite">&#xe002;</span></a></li>
 			</ul>
 			<!--下拉菜单-->
 			<div class="collapse navbar-collapse justify-content-between mt-lg-5 bg_black" id="content">
-				<ul class="navbar-nav">
-					<li class="nav-item"><a href="#" class="nav-link">Products<span class="icon drop_down_icon">&#xe001;</span></a></li>
+				<ul class="navbar-nav ml-4" id="nav-memu">
+					<li class="nav-item">
+						<a href="#" class="nav-link">Products
+							<span class="icon drop_down_icon d-inline-block mb-1 ml-1">&#xe007;</span>
+						</a>
+					</li>
 					<li class="nav-item"><a href="#" class="nav-link">About</a></li>
 					<li class="nav-item"><a href="#" class="nav-link">Design With US</a></li>
 					<li class="nav-item"><a href="#" class="nav-link">Umbra Shift</a></li>
 					<li class="nav-item"><a href="#" class="nav-link">Disign Stories</a></li>
 				</ul>
 				<ul class="navbar-nav">
-					<li class="nav-item"><a href="#" class="nav-link"><span class="icon search">&#xe004;</span></a></li>
-					<li class="nav-item"><a href="#" class="nav-link">USD<span class="icon drop_down_icon">&#xe001;</span></a></li>
+					<li class="nav-item"><a href="#" class="nav-link"><span class="icon search">&#xe003;</span></a></li>
+					<li class="nav-item"><a href="#" class="nav-link">USD<span class="icon drop_down_icon d-inline-block mb-2 ml-1">&#xe007;</span></a></li>
 					<li class="nav-item"><a href="#" class="nav-link">Sign in</a></li>
-					<li class="nav-item d-sm-none d-lg-block"><a href="#" class="nav-link"><span class="icon favorite">&#xe003;</span></a></li>
-					<li class="nav-item d-lg-block d-sm-none"><a href="#" class="nav-link"><span class="icon shop_car">&#xe002;<span id="count">1</span></span></a></li>
-					
+					<li class="nav-item d-sm-none d-lg-block"><a href="#" class="nav-link"><span class="icon favorite">&#xe002;</span></a></li>
+					<li class="nav-item d-lg-block d-sm-none"><a href="#" class="nav-link"><span class="icon shop_car">&#xe001;<span id="count">0</span></span></a></li>
 				</ul>
 			</div>
+			<ul id="nav-down" class="d-lg-block d-sm-none d-xs-none">
+			</ul>	
 		</div>
+		
 <!-- 		轮播图 -->
 		<div id="banner" class="carousel d-sm-none d-lg-block" data-ride="carousel">
 <!-- 			轮播图片组 -->
@@ -229,5 +235,6 @@
 		</div>
     </div>
 		<iframe src="footer.html" frameborder="0" scrolling="no" class="ifooter"></iframe>
+		<script src="js/umbra.js"></script>
 </body>
 </html>
