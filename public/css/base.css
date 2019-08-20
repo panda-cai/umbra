@@ -156,6 +156,7 @@ a:hover{
 	top:6.5rem;
 	left: 0;
 	z-index: 1000;
+	display: none;
 }
 #nav-down::after{
 	content: "";
